@@ -14,7 +14,8 @@ const Sidebar = () => {
     <aside className="sidebar">
       <div className="flex size-full flex-col gap-4">
         <Link href="/" className="sidebar-logo">
-          <Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />
+          <Image src="/assets/images/logo.ico" alt="logo" width={40} height={30} />
+          <span className="text-2xl font-semibold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent flex items-end -ml-1 leading-none self-end mb-1">AIMAGINATION</span>
         </Link>
 
         <nav className="sidebar-nav">
@@ -24,11 +25,10 @@ const Sidebar = () => {
                 const isActive = link.route === pathname
 
                 return (
-                  <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
-                  }`}>
+                  <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                    }`}>
                     <Link className="sidebar-link" href={link.route}>
-                      <Image 
+                      <Image
                         src={link.icon}
                         alt="logo"
                         width={24}
@@ -40,7 +40,7 @@ const Sidebar = () => {
                   </li>
                 )
               })}
-              </ul>
+            </ul>
 
 
             <ul className="sidebar-nav_elements">
@@ -48,11 +48,10 @@ const Sidebar = () => {
                 const isActive = link.route === pathname
 
                 return (
-                  <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
-                  }`}>
+                  <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                    }`}>
                     <Link className="sidebar-link" href={link.route}>
-                      <Image 
+                      <Image
                         src={link.icon}
                         alt="logo"
                         width={24}
